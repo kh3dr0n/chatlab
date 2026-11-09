@@ -1,0 +1,22 @@
+[project]
+name = "chatlab"
+version = "0.1.0"
+description = "Toy Open WebUI-style chat backend, built lesson by lesson"
+readme = "README.md"
+authors = [
+    { name = "kh3dr0n", email = "kheder.marwen@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.162.2",
+    "httpx>=0.28.1",
+    "pydantic-settings>=2.16.2",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+chatlab = "chatlab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
